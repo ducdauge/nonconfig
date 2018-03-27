@@ -1,0 +1,7 @@
+node $n1 := 
+[ deprel ~ "atr", cpostag ~ "A", order-follows $n2, 
+     parent node $n0 := 
+     [ cpostag ~ "N", 
+          order-precedes node $n2 := 
+          [ !ancestor $n0 ] ] ];
+  >> for $n1.form,$n0.form give $1,$2,count() sort by $3 desc
