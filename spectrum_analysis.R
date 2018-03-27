@@ -1,4 +1,4 @@
-library(igraph)
+library(igraph,ggplot2)
 # Load graph
 g <- read.graph(file="<filename>.net", format="pajek")
 # Make it undirected
