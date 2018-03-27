@@ -1,5 +1,24 @@
-# nonconfig
-Code and queries to measure non-configurational properties in Ancient Greek and Latin
+# nonconfig: Non-configurationality in diachrony
+
+This is an open source implementation of our measures and queries described in the following paper:
+
+Edoardo Maria Ponti, Silvia Luraghi. To appear. **[Non-configurationality in diachrony: Correlations in local and global networks of Ancient Greek and Latin](https://www.academia.edu/35553047/Non-configurationality_in_diachrony_Correlations_in_local_and_global_networks_of_Ancient)**. In *Diachronica*.
+
+If you use this software for academic research, please cite the paper in question:
+```
+@article{ponti2018non,
+  author    = {Ponti, Edoardo Maria  and  Luraghi, Silvia},
+  title     = {Non-configurationality in diachrony: Correlations in local and global networks of Ancient Greek and Latin},
+  journal   = {Diachronica},
+  year      = {To appear}
+}
+```
+
+## Requirements
+
+- Python
+- R
+- Perl
 
 ## Setup: data and softwares
 
@@ -30,8 +49,6 @@ Run a query on ```.pml``` files with TrEd to count and list:
 
 - pronominal objects of coordinated verbs: [pron_coord_verb.pmltq](scripts/pron_coord_verb.pmltq)
 
-
-
 ## Estimate the correlations
 Run the following lines on R:
 
@@ -39,3 +56,7 @@ Run the following lines on R:
 library(Hmisc)
 rcorr(as.matrix(<values>), type="pearson")
 ```
+
+## License
+
+Licensed under the terms of the GNU General Public License, either version 3 or (at your option) any later version. A full copy of the license can be found in LICENSE.txt.
