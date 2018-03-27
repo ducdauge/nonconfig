@@ -1,0 +1,12 @@
+  node $n2 := 
+[ cpostag ~ "C", child $n0, 
+      node $n3 := 
+     [ cpostag ~ "V", order-follows $n0, 
+           node $n4 := 
+          [ cpostag ~ "N", deprel = "obj" ] ] ];
+
+node $n0 := 
+[ cpostag ~ "V", child $n1 ];
+
+node $n1 := 
+[ postag ~ "Pp", feats ~ "PERS3", deprel = "obj" ];
